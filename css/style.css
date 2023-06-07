@@ -70,7 +70,8 @@ header {
     color: var(--text-primary-color);
 }
 
-.fa-bars {
+.toogle {
+    visibility: hidden;
     display: none;
     font-size: 20px;
     color: var(--text-primary-color);
@@ -580,6 +581,10 @@ footer {
 }
 
 @media (max-width: 425px) {
+    .button__head--cart {
+        display: none;
+    }
+
     html, body {
         overflow-x: hidden;
     }
@@ -594,10 +599,12 @@ footer {
 
     .button__head--cart,
     .button__head--signup {
+        visibility: hidden;
         display: none;
     }
 
     .fa-bars {
+        visibility: visible;
         display: block;
     }
 
